@@ -8,6 +8,7 @@ Mon programme est un petit programme en Python qui permet de crypter un nombre e
 Les choses dont vous avez besoin avant d'installer le logiciel :
 
 * Python
+* Thonny (ou un autre exécuteur Python)
 
 ### Installation
 
@@ -15,13 +16,14 @@ Un guide étape par étape qui vous expliquera comment mettre en place et faire 
 
 ```
 $ Télécharger le fichier Python
-$ Ouvrez le fichier dans un exécuteur Python (par exemple, Thonny) ou directement via le cmd de Windows.
+$ Ouvrez le fichier via un exécuteur Python (par exemple, Thonny)
+$ Lancer le programme
 ```
 ## Usage
 
 Quelques exemples de commandes et/ou tâches utiles.
 
 ```
-$ L'option 1 permet de crypter un nombre directement en sha256.
-$ La seconde option permet de décrypter un nombre crypté en sha256.
+$ La première option permet de crypter un nombre directement en sha256. Le nombre crypté s'affichera à votre écran.
+$ La deuxième option permet de décrypter un nombre crypté en sha256.
 ```
