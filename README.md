@@ -14,6 +14,6 @@ Les choses dont vous avez besoin avant d'installer le logiciel :
 Un guide étape par étape qui vous expliquera comment mettre en place et faire fonctionner l'environnement de développement.
 
 ```
-$ Télécharger le fichier python
-$ Ouvrez le avec un exécuteur Python (Thonny) ou directement via le cmd de Windows.
+$ Télécharger le fichier Python
+$ Ouvrez le fichier un exécuteur Python (par exemple, Thonny) ou directement via le cmd de Windows.
 ```
