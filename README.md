@@ -15,7 +15,7 @@ Un guide étape par étape qui vous expliquera comment mettre en place et faire 
 
 ```
 $ Télécharger le fichier Python
-$ Ouvrez le fichier un exécuteur Python (par exemple, Thonny) ou directement via le cmd de Windows.
+$ Ouvrez le fichier dans un exécuteur Python (par exemple, Thonny) ou directement via le cmd de Windows.
 ```
 ## Usage
 
