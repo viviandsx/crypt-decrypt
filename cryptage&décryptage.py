@@ -1,5 +1,4 @@
 import hashlib
-import random
 
 def crypt(): #Fonction qui permet de crypter le nombre en sha256.
     texte = str(input("Entrez un nombre à crypter : "))
@@ -14,20 +13,20 @@ Voulez vous décrypter ce nombre ?
         bruteforce(crypt)
     
 def bruteforce(password): #Fonction qui permet de bruteforce un nombre crypter en sha256, en testant chaque nombre 1 par 1.
-        trial = " "
-        s = 0
-        while trial != password: 
-            for trial in range(0,9999999): 
-                trial=trial+s
-                trial=str(trial)
-                trialencoded = hashlib.sha256(str.encode(trial)).hexdigest() #Permet de crypter chaque nombre 1 par 1.
+    trial = " "
+    s = 0
+    while trial != password: 
+        for trial in range(0,9999999): 
+            trial=trial+s
+            trial=str(trial)
+            trialencoded = hashlib.sha256(str.encode(trial)).hexdigest() #Permet de crypter chaque nombre 1 par 1.
         
-                print(">>> " + trial + " <<<")
+            print(">>> " + trial + " <<<")
         
-                if (trialencoded == password): #Permet de comparer le nombre crypter au nombre à décrypter.
-                    print("Le nombre hashed est " + trial +".")
-                    trial = password
-                    break
+            if (trialencoded == password): #Permet de comparer le nombre crypter au nombre à décrypter.
+                print("Le nombre hashed est " + trial +".")
+                trial = password
+                break
                     
 main = int(input("""
 Ceci est un petit programme qui permet de crypter un nombre en sha256 et de le décrypter !
