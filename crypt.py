@@ -12,19 +12,19 @@ Voulez vous décrypter ce nombre ?
     if choix == 1:
         bruteforce(crypt)
     
-def bruteforce(password): #Fonction qui permet de bruteforce un nombre crypter en sha256, en testant chaque nombre 1 par 1.
-    trial = " "
-    while trial != password: 
-        for trial in range(0,9999999): 
-            trial=str(trial)
-            trialencoded = hashlib.sha256(str.encode(trial)).hexdigest() #Permet de crypter chaque nombre 1 par 1.
-        
-            print(">>> " + trial + " <<<")
-        
-            if (trialencoded == password): #Permet de comparer le nombre crypter au nombre à décrypter.
-                print("Le nombre hashed est " + trial +".")
-                trial = password
-                break
+def bruteforce(password):  # Fonction qui permet de bruteforce un nombre crypter en sha256, en testant chaque nombre 1 par 1.
+
+    trial = 0
+    while trial != password:
+        trial = str(int(trial) + 1)
+
+        trialencoded = hashlib.sha256(str.encode(trial)).hexdigest()  # Permet de crypter chaque nombre 1 par 1.
+
+        print(">>> " + trial + " <<<")
+
+        if trialencoded == password:  # Permet de comparer le nombre crypter au nombre à décrypter.
+            print("Le nombre hashed est " + trial + ".")
+            break
                     
 main = int(input("""
 Ceci est un petit programme qui permet de crypter un nombre en sha256 et de le décrypter !
