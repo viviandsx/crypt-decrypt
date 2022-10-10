@@ -14,10 +14,8 @@ Voulez vous décrypter ce nombre ?
     
 def bruteforce(password): #Fonction qui permet de bruteforce un nombre crypter en sha256, en testant chaque nombre 1 par 1.
     trial = " "
-    s = 0
     while trial != password: 
         for trial in range(0,9999999): 
-            trial=trial+s
             trial=str(trial)
             trialencoded = hashlib.sha256(str.encode(trial)).hexdigest() #Permet de crypter chaque nombre 1 par 1.
         
@@ -30,7 +28,6 @@ def bruteforce(password): #Fonction qui permet de bruteforce un nombre crypter e
                     
 main = int(input("""
 Ceci est un petit programme qui permet de crypter un nombre en sha256 et de le décrypter !
-
 Merci de faire votre choix :
 1- Crypter un nombre
 2- Bruteforce
